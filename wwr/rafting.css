@@ -9,17 +9,13 @@
     /* Soft white/cream for backgrounds */
     --dark-color: #081C15;
     /* Very dark green/black for text */
-    --heading-font: 'times new roman', sans-serif;
-    /* Modern sans-serif font for headings */
+    --heading-font: 'Times New Roman', serif;
+    --body-font: Arial, sans-serif;
+    --text-color: #081C15;
+    /* Default dark text */
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--light-color);
-    padding: 1rem;
-    text-align: center;
-}
-
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -27,10 +23,13 @@ header {
 }
 
 body {
-    font-family: var(--body-font, Arial, sans-serif);
-    color: var(--text-color, yellow);
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--light-color);
+    line-height: 1.6;
 }
 
+/* Layout containers */
 header,
 main,
 footer {
@@ -38,12 +37,38 @@ footer {
     margin: 0 auto;
 }
 
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 120px;
+}
+
+/* Navigation */
+nav a {
+    color: var(--light-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* General spacing */
 nav,
 p,
 section article {
@@ -51,42 +76,62 @@ section article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+/* Hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-    .hero {
-        position: relative;
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-        .hero img {
-            width: 100%;
-            height: auto;
-            display: block;
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--light-color);
+    font-size: 2rem;
+}
 
-            h1 {
-                position: absolute;
-                top: 20px;
-                width: 100%;
-                padding: 16px;
-                text-align: center;
-                background-color: rgba(0, 0, 0, 0.5);
-                opacity: 0.8;
-                color: var(--dark-color);
-            }
+/* Hero article */
+.hero article {
+    background-color: var(--light-color);
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+}
 
-            .article {
-                background-color: var(--light-color);
-                padding: 16px;
-                margin: 16px 0;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
 
-            }
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem;
+    margin-top: 2rem;
+}
 
-            .hero .article img {
-                float: right;
-                width: 125px;
-            }
+.socialmedia a img {
+    width: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
