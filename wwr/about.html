@@ -2,57 +2,129 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Adventure Rafting Co.</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Adventure Rafting Co.</title>
     <meta name="description"
-        content="Learn about Adventure Rafting Co., our mission, history, and why your next adventure begins with us.">
-    <meta name="author" content="James Gesimba">
-    <link rel="stylesheet" href="rafting.css">
+        content="Learn about Adventure Rafting Co., our mission, history, and why your next adventure begins with us." />
+    <meta name="author" content="James Gesimba" />
+    <link rel="stylesheet" href="rafting.css" />
 </head>
 
 <body>
-    <header>
-        <img src="images.jpg" alt="Adventure Rafting Co. Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <a class="brand" href="index.html" aria-label="Adventure Rafting Co. home">
+            <img src="images.jpg"
+                alt="Three people wearing helmets and life jackets paddling a yellow inflatable raft together, surrounded by a compass and playful rafting trail text, conveying teamwork and excitement in a fun outdoor adventure setting"
+                class="logo" />
+        </a>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="rafting59-600.jpg">
-            <img src="5771766.jpg" alt="Rafting adventure on the river">
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images.jpg"
+                alt="A group of rafters working together to paddle through energetic whitewater rapids, smiling and focused as they navigate the river. The scene is surrounded by lush green trees and rocky riverbanks, creating a lively and adventurous atmosphere. No visible text in the image." />
             <h1>Adventure Rafting Co.</h1>
-            <article>
-                <img src="rafting65_600.jpg" alt="Happy rafting client">
-                <p>Our mission is to provide thrilling yet safe rafting experiences that bring families, friends, and
-                    adventurers closer together while enjoying the beauty of nature.</p>
-            </article>
-        </div>
-
-        <section>
-            <h2>History</h2>
-            <p>Adventure Rafting Co. began as a small group of outdoor enthusiasts with a love for rivers. Over time, we
-                grew into a trusted team of guides dedicated to creating unforgettable rafting adventures for all ages.
-            </p>
         </section>
 
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <!-- Placeholder for future images and promotional content -->
+        <!-- Mission / intro -->
+        <section class="intro">
+            <article class="intro-card" aria-labelledby="intro-heading">
+                <img src="rafting65_600.jpg" alt="Happy rafting client" class="intro-img" />
+                <div>
+                    <h2 id="intro-heading">Our Mission</h2>
+                    <p>
+                        Our mission is to provide thrilling yet safe rafting experiences that bring families, friends,
+                        and
+                        adventurers closer together while enjoying the beauty of nature.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- History -->
+        <section class="history" aria-labelledby="history-heading">
+            <h2 id="history-heading">Our History</h2>
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>
+                        Adventure Rafting Co. began as a small group of outdoor enthusiasts with a love for rivers. Over
+                        time, we
+                        grew into a trusted team of guides dedicated to creating unforgettable rafting adventures for
+                        all ages.
+                    </p>
+                </div>
+                <figure class="history-figure">
+                    <img src="images.jpg"
+                        alt="Several rafters wearing helmets and life jackets paddle together through energetic whitewater rapids, working as a team with focused and joyful expressions. The river is surrounded by lush green trees and rocky banks, creating a vibrant and adventurous outdoor setting. No visible text in the image." />
+                    <figcaption>Our early rafting days</figcaption>
+                </figure>
+                <div class="history-text">
+                    <p>
+                        From those humble beginnings, we expanded into multiple locations and trained world-class guides
+                        who make
+                        your safety and enjoyment their top priority.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adventures -->
+        <section class="adventures" aria-labelledby="adventures-heading">
+            <h2 id="adventures-heading">Adventure Awaits You!</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="5771766.jpg" alt="Los Dientes del Diablo rapid" />
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="5780561.jpg" alt="Big Mallard rapid" />
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="rafting65_600.jpg" alt="Half Day Adventure trip" />
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="rafting59-600.jpg" alt="Devil's Canyon rapid" />
+                    <figcaption>Devil's Canyon</figcaption>
+                </figure>
+                <figure>
+                    <img src="3046121.jpg" alt="The Gauntlet whitewater" />
+                    <figcaption>The Gauntlet</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
         <p>&copy; 2025 Adventure Rafting Co. | James Gesimba</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="5771766.jpg" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="5780561.jpg" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="3046121.jpg" alt="Instagram"></a>
-        </nav>
+        <div class="social">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="3689126.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter">
+                <img src="3689115.png" alt="Twitter" />
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="3689123.png"
+                    alt="Instagram logo centered inside a vibrant gradient circle with pink, orange, and yellow hues on a white background, evoking a friendly and energetic atmosphere" />
+            </a>
+        </div>
     </footer>
 </body>
 

@@ -33,5 +33,8 @@
   "liveServer.settings.port": 5503,
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "cSpell.words": [
+    "useremail"
+  ]
 }
