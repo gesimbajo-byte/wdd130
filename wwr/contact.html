@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Adventure Rafting Co.</title>
+    <link rel="stylesheet" href="rafting.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Adventure Rafting Co.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Contact Us</h2>
+
+        <!-- Company Information -->
+        <section>
+            <h3>Our Office</h3>
+            <p>123 Rapid River Road<br>Adventure City, CO 80521</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@adventureraftingco.com</p>
+
+            <!-- Google Map Embed (border style removed) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.941992839657!2d-105.27054608462348!3d40.0150069794117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bf1b5e6f1a36f%3A0xb097cc7c96b8e9b6!2sBoulder%2C%20CO!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                width="100%" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map">
+            </iframe>
+        </section>
+
+        <!-- Employee Images (No Captions) -->
+        <section>
+            <h3>Our Team</h3>
+            <div>
+                <img src=https://en.wikipedia.org/wiki/File:Tommy_Flanagan_March_2012_(cropped).jpg
+                    alt="John - Lead Guide" width="200" />
+                <img src=https://en.wikipedia.org/wiki/File:Sarah_Paulson_by_Gage_Skidmore.jpg
+                    alt="Sarah - Reservations Manager" width="200" />
+                <img src=https://en.wikipedia.org/wiki/File:Mike_Wazowski.png alt="Mike - Safety Coordinator"
+                    width="200" />
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label><br />
+                <input type="text" id="name" name="name" required /><br /><br />
+
+                <label for="email">Your Email:</label><br />
+                <input type="email" id="email" name="email" required /><br /><br />
+
+                <p>Purpose of Message:</p>
+                <input type="radio" id="general" name="purpose" value="General Inquiry" required />
+                <label for="general">General Inquiry</label><br />
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question" />
+                <label for="reservation">Reservation Question</label><br />
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" />
+                <label for="suggestion">Website Suggestion</label><br /><br />
+
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+                <input type="checkbox" id="subscribe" name="subscribe" />
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br /><br />
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Adventure Rafting Co.</p>
+    </footer>
+
+</body>
+
+</html>
